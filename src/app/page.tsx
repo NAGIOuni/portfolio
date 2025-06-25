@@ -13,7 +13,7 @@ export default function Home() {
           </h1>
         </div>
         <div className="">
-          <p className="mt-3 ml-3">Kyoto University</p>
+          <p className="mt-3 ml-3">Engineer's Portfolio</p>
         </div>
       </div>
       <div className="max-w-7xl flex justify-center items-center flex-col my-20">
@@ -136,48 +136,6 @@ export default function Home() {
                 <div className="w-1/3 flex flex-col md:flex-row items-center">
                   <div className="w-1/3 flex justify-center">
                     <Image
-                      src="HTML5のロゴアイコン.png"
-                      alt=""
-                      width={50}
-                      height={50}
-                      style={{ objectFit: "cover" }}
-                    />
-                  </div>
-                  <div className="w-2/3 flex justify-center md:justify-start">
-                    <h4 className="font-bold text-lg m-3">HTML</h4>
-                  </div>
-                </div>
-                <div className="w-2/3">
-                  <p className="m-3">
-                    UdemyでHTML, CSS, JavaScriptを学習した。
-                  </p>
-                </div>
-              </li>
-              <li className="w-full flex items-center justify-center px-3 py-5 xl:w-1/2">
-                <div className="w-1/3 flex flex-col md:flex-row items-center">
-                  <div className="w-1/3 flex justify-center">
-                    <Image
-                      src="icons8-css3-100.png"
-                      alt=""
-                      width={50}
-                      height={50}
-                      style={{ objectFit: "cover" }}
-                    />
-                  </div>
-                  <div className="w-2/3 flex justify-center md:justify-start">
-                    <h4 className="font-bold text-lg m-3">CSS</h4>
-                  </div>
-                </div>
-                <div className="w-2/3">
-                  <p className="m-3">
-                    UdemyでHTML, CSS, JavaScriptを学習した。
-                  </p>
-                </div>
-              </li>
-              <li className="w-full flex items-center justify-center px-3 py-5 xl:w-1/2">
-                <div className="w-1/3 flex flex-col md:flex-row items-center">
-                  <div className="w-1/3 flex justify-center">
-                    <Image
                       src="icons8-js-100.png"
                       alt=""
                       width={50}
@@ -187,6 +145,48 @@ export default function Home() {
                   </div>
                   <div className="w-2/3 flex justify-center md:justify-start">
                     <h4 className="font-bold text-lg m-3">JavaScript</h4>
+                  </div>
+                </div>
+                <div className="w-2/3">
+                  <p className="m-3">
+                    UdemyでHTML, CSS, JavaScriptを学習した。
+                  </p>
+                </div>
+              </li>
+              <li className="w-full flex items-center justify-center px-3 py-5 xl:w-1/2">
+                <div className="w-1/3 flex flex-col md:flex-row items-center">
+                  <div className="w-1/3 flex justify-center">
+                    <Image
+                      src="icons8-rubyプログラミング言語-128.png"
+                      alt=""
+                      width={50}
+                      height={50}
+                      style={{ objectFit: "cover" }}
+                    />
+                  </div>
+                  <div className="w-2/3 flex justify-center md:justify-start">
+                    <h4 className="font-bold text-lg m-3">Ruby</h4>
+                  </div>
+                </div>
+                <div className="w-2/3">
+                  <p className="m-3">
+                    UdemyでHTML, CSS, JavaScriptを学習した。
+                  </p>
+                </div>
+              </li>
+              <li className="w-full flex items-center justify-center px-3 py-5 xl:w-1/2">
+                <div className="w-1/3 flex flex-col md:flex-row items-center">
+                  <div className="w-1/3 flex justify-center">
+                    <Image
+                      src="icons8-python-100.png"
+                      alt=""
+                      width={50}
+                      height={50}
+                      style={{ objectFit: "cover" }}
+                    />
+                  </div>
+                  <div className="w-2/3 flex justify-center md:justify-start">
+                    <h4 className="font-bold text-lg m-3">Python</h4>
                   </div>
                 </div>
                 <div className="w-2/3">
@@ -207,7 +207,7 @@ export default function Home() {
           <h2 className="text-5xl font-bold text-center mb-3">WORKS</h2>
         </div>
         <ul className="w-full flex sm:justify-between justify-center flex-wrap">
-          <li className="w-full flex flex-col items-center w-sm mx-3">
+          <li className="w-full flex flex-col items-center w-sm mx-3 my-5">
             <Image
               src="word_car.png"
               alt=""
@@ -218,14 +218,14 @@ export default function Home() {
             <h3 className="text-3xl font-bold mt-5">
               <a href="/tangoCard">英単語学習アプリ</a>
             </h3>
-            <p className="my-3">
+            <p className="p-3">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia
               accusantium, earum, numquam eum quisquam nemo vitae dolorum
               veritatis dolore doloribus quas perspiciatis assumenda et!
               Incidunt quia suscipit optio at illo?
             </p>
           </li>
-          <li className="w-full flex flex-col items-center w-sm mx-3">
+          <li className="w-full flex flex-col items-center w-sm mx-3 my-5">
             <Image
               src="word_car.png"
               alt=""
@@ -236,14 +236,14 @@ export default function Home() {
             <h3 className="text-3xl font-bold mt-5">
               <a href="/tangoCard">英単語学習アプリ</a>
             </h3>
-            <p className="my-3">
+            <p className="p-3">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia
               accusantium, earum, numquam eum quisquam nemo vitae dolorum
               veritatis dolore doloribus quas perspiciatis assumenda et!
               Incidunt quia suscipit optio at illo?
             </p>
           </li>
-          <li className="w-full flex flex-col items-center w-sm mx-3">
+          <li className="w-full flex flex-col items-center w-sm mx-3 my-5">
             <Image
               src="word_car.png"
               alt=""
@@ -254,7 +254,7 @@ export default function Home() {
             <h3 className="text-3xl font-bold mt-5">
               <a href="/tangoCard">英単語学習アプリ</a>
             </h3>
-            <p className="my-3">
+            <p className="p-3">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia
               accusantium, earum, numquam eum quisquam nemo vitae dolorum
               veritatis dolore doloribus quas perspiciatis assumenda et!
@@ -305,7 +305,9 @@ export default function Home() {
         </div>
       </div>
       <div className="w-full h-30 flex justify-center items-end">
-        <p className="mb-3">footer</p>
+        <p className="mb-3">
+          Icons by <a href="https://icons8.jp/">Icons8</a>
+        </p>
       </div>
     </div>
   );
