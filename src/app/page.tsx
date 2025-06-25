@@ -5,8 +5,8 @@ export default function Home() {
     <div id="top" className="flex flex-col items-center">
       <div className="w-full max-w-7xl h-screen flex flex-col xl:flex-row items-center justify-center xl:justify-start">
         <div className="w-auto">
-          <h1 className="ml-3 text-9xl font-blod">NAKAMURA</h1>
-          <h1 className="ml-3 text-9xl font-blod">RYOTA</h1>
+          <h1 className="ml-3 text-9xl font-bold">NAKAMURA</h1>
+          <h1 className="ml-3 text-9xl font-bold">RYOTA</h1>
         </div>
         <div className="">
           <p className="mt-3 ml-3">Kyoto University</p>
@@ -23,11 +23,12 @@ export default function Home() {
               alt=""
               width={200}
               height={200}
-              objectFit="cover"
+              style={{ objectFit: "cover" }}
+              className="rounded-full"
             />
           </div>
           <div className="w-2/3">
-            <p className="me-10">
+            <p className="break-words px-5">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
               magni quidem obcaecati rerum atque sit maxime eligendi veritatis!
               Distinctio laborum voluptatibus, amet quas iure alias eaque?
@@ -54,6 +55,61 @@ export default function Home() {
       <div className="max-w-7xl flex justify-center items-center flex-col my-8">
         <div className="h-20 flex items-center">
           <h2 className="text-5xl font-bold text-center mb-3">SKILL</h2>
+        </div>
+        <div className="flex flex-col">
+          <div className="flex flex-col items-center">
+            <h3 className="font-bold text-center text-3xl">FRONTEND</h3>
+            <ul className="flex flex-col xl:flex-row xl:flex-wrap items-center">
+              <li className="flex items-center justify-center m-2">
+                <div className="w-1/6">
+                  <div className="w-30 h-30 bg-red-500 m-3"></div>
+                </div>
+                <div className="w-1/6">
+                  <h4 className="font-bold text-lg m-3">HTML</h4>
+                </div>
+                <div className="w-2/3">
+                  <p className="">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Reiciendis sequi consectetur aliquam ab fuga eos sapiente
+                    atque. Officia doloremque vero reprehenderit sint iusto nam
+                    nostrum, ut fugiat saepe nihil beatae.{" "}
+                  </p>
+                </div>
+              </li>
+              <li className="flex items-center justify-center m-2">
+                <div className="w-1/6">
+                  <div className="w-30 h-30 bg-red-500 m-3"></div>
+                </div>
+                <div className="w-1/6">
+                  <h4 className="font-bold text-lg m-3">CSS</h4>
+                </div>
+                <div className="w-2/3">
+                  <p className="">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Reiciendis sequi consectetur aliquam ab fuga eos sapiente
+                    atque. Officia doloremque vero reprehenderit sint iusto nam
+                    nostrum, ut fugiat saepe nihil beatae.{" "}
+                  </p>
+                </div>
+              </li>
+              <li className="flex items-center justify-center m-2">
+                <div className="w-1/6">
+                  <div className="w-30 h-30 bg-red-500 m-3"></div>
+                </div>
+                <div className="w-1/6">
+                  <h4 className="font-bold text-lg m-3">JavaScript</h4>
+                </div>
+                <div className="w-2/3">
+                  <p className="">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Reiciendis sequi consectetur aliquam ab fuga eos sapiente
+                    atque. Officia doloremque vero reprehenderit sint iusto nam
+                    nostrum, ut fugiat saepe nihil beatae.{" "}
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <div
