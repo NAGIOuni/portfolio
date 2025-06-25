@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center">
+    <div id="top" className="flex flex-col items-center">
       <div className="w-full max-w-7xl h-screen flex flex-col xl:flex-row items-center justify-center xl:justify-start">
         <div className="w-auto">
           <h1 className="ml-3 text-9xl font-blod">NAKAMURA</h1>
@@ -13,6 +13,53 @@ export default function Home() {
         </div>
       </div>
       <div className="max-w-7xl flex justify-center items-center flex-col my-8">
+        <div className="h-20 flex items-center">
+          <h2 className="text-5xl font-bold text-center mb-3">PROFILE</h2>
+        </div>
+        <div className="flex items-center">
+          <div className="w-1/3 flex justify-center">
+            <Image
+              src="profile_img.jpg"
+              alt=""
+              width={200}
+              height={200}
+              objectFit="cover"
+            />
+          </div>
+          <div className="w-2/3">
+            <p className="me-10">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+              magni quidem obcaecati rerum atque sit maxime eligendi veritatis!
+              Distinctio laborum voluptatibus, amet quas iure alias eaque?
+              Itaque quia ullam repellat. Maiores in accusantium cum tempora
+              praesentium delectus? Accusamus veritatis quidem commodi, ut
+              excepturi ad quod laudantium incidunt vel distinctio enim iusto
+              eveniet aperiam exercitationem, assumenda aliquid odit officiis!
+              Labore, tempora! Libero possimus sed nesciunt assumenda temporibus
+              a minus, harum molestiae distinctio nulla eveniet, placeat
+              repellendus corrupti vel magni expedita fugiat ipsa. Voluptates
+              iusto aspernatur facilis nihil illo eligendi, exercitationem
+              minima. Accusamus id temporibus perferendis voluptatem consequatur
+              veritatis possimus eum unde reiciendis facilis, sint at ab
+              suscipit mollitia harum aliquid esse ut nesciunt assumenda, minus
+              fugit! Nesciunt cupiditate accusantium repellat commodi. Corrupti
+              explicabo animi nam dolorem. Amet ipsum necessitatibus est natus
+              quae beatae aliquam error quisquam quo! Tenetur reiciendis eum
+              facere voluptas sequi eligendi quidem a beatae. Dolore labore eum
+              ratione.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="max-w-7xl flex justify-center items-center flex-col my-8">
+        <div className="h-20 flex items-center">
+          <h2 className="text-5xl font-bold text-center mb-3">SKILL</h2>
+        </div>
+      </div>
+      <div
+        id="works"
+        className="max-w-7xl flex justify-center items-center flex-col my-8"
+      >
         <div className="h-20 flex items-center">
           <h2 className="text-5xl font-bold text-center mb-3">WORKS</h2>
         </div>
@@ -73,8 +120,11 @@ export default function Home() {
           </li>
         </ul>
       </div>
-      <div className="max-w-7xl flex flex-col justify-center items-center flex-col my-8">
-        <h2 className="text-5xl font-bold mt-5">ABOUT</h2>
+      <div
+        id="contact"
+        className="max-w-7xl flex flex-col justify-center items-center flex-col my-8"
+      >
+        <h2 className="text-5xl font-bold mt-5">CONTACT</h2>
         <div className="mt-5 mx-3">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia,
           repellendus neque dolorum ullam repudiandae labore minima temporibus
