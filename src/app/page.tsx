@@ -5,18 +5,22 @@ export default function Home() {
     <div id="top" className="flex flex-col items-center">
       <div className="w-full max-w-7xl h-screen flex flex-col xl:flex-row items-center justify-center xl:justify-start">
         <div className="w-auto">
-          <h1 className="ml-3 text-9xl font-bold">NAKAMURA</h1>
-          <h1 className="ml-3 text-9xl font-bold">RYOTA</h1>
+          <h1 className="ml-3 text-5xl md:text-7xl xl:text-9xl font-bold">
+            NAKAMURA
+          </h1>
+          <h1 className="ml-3 text-5xl md:text-7xl xl:text-9xl font-bold">
+            RYOTA
+          </h1>
         </div>
         <div className="">
           <p className="mt-3 ml-3">Kyoto University</p>
         </div>
       </div>
-      <div className="max-w-7xl flex justify-center items-center flex-col my-8">
-        <div className="h-20 flex items-center">
+      <div className="max-w-7xl flex justify-center items-center flex-col my-20">
+        <div className="h-40 flex items-center">
           <h2 className="text-5xl font-bold text-center mb-3">PROFILE</h2>
         </div>
-        <div className="flex items-center">
+        <div className="flex items-center flex-col md:flex-row">
           <div className="w-1/3 flex justify-center">
             <Image
               src="profile_img.jpg"
@@ -24,11 +28,11 @@ export default function Home() {
               width={200}
               height={200}
               style={{ objectFit: "cover" }}
-              className="rounded-full"
+              className="rounded-full mb-5 md:mb-0"
             />
           </div>
-          <div className="w-2/3">
-            <p className="break-words px-5">
+          <div className="w-full md:w-2/3">
+            <p className="break-words p-10">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
               magni quidem obcaecati rerum atque sit maxime eligendi veritatis!
               Distinctio laborum voluptatibus, amet quas iure alias eaque?
@@ -52,59 +56,142 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="max-w-7xl flex justify-center items-center flex-col my-8">
-        <div className="h-20 flex items-center">
-          <h2 className="text-5xl font-bold text-center mb-3">SKILL</h2>
+      <div className="w-full max-w-7xl flex justify-center items-center flex-col my-20">
+        <div className="h-40 flex items-center">
+          <h2 className="text-5xl font-bold text-center">SKILL</h2>
         </div>
-        <div className="flex flex-col">
-          <div className="flex flex-col items-center">
-            <h3 className="font-bold text-center text-3xl">FRONTEND</h3>
-            <ul className="flex flex-col xl:flex-row xl:flex-wrap items-center">
-              <li className="flex items-center justify-center m-2">
-                <div className="w-1/6">
-                  <div className="w-30 h-30 bg-red-500 m-3"></div>
-                </div>
-                <div className="w-1/6">
-                  <h4 className="font-bold text-lg m-3">HTML</h4>
+        <div className="flex flex-col w-full">
+          <div className="flex flex-col items-center w-full my-5">
+            <h3 className="font-bold text-center text-3xl m-5">FRONTEND</h3>
+            <ul className="w-full flex flex-col xl:flex-row xl:flex-wrap items-center">
+              <li className="w-full flex items-center justify-center px-3 py-5 xl:w-1/2">
+                <div className="w-1/3 flex flex-col md:flex-row items-center">
+                  <div className="w-1/3 flex justify-center">
+                    <Image
+                      src="HTML5のロゴアイコン.png"
+                      alt=""
+                      width={50}
+                      height={50}
+                      style={{ objectFit: "cover" }}
+                    />
+                  </div>
+                  <div className="w-2/3 flex justify-center md:justify-start">
+                    <h4 className="font-bold text-lg m-3">HTML</h4>
+                  </div>
                 </div>
                 <div className="w-2/3">
-                  <p className="">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Reiciendis sequi consectetur aliquam ab fuga eos sapiente
-                    atque. Officia doloremque vero reprehenderit sint iusto nam
-                    nostrum, ut fugiat saepe nihil beatae.{" "}
+                  <p className="m-3">
+                    UdemyでHTML, CSS, JavaScriptを学習した。
                   </p>
                 </div>
               </li>
-              <li className="flex items-center justify-center m-2">
-                <div className="w-1/6">
-                  <div className="w-30 h-30 bg-red-500 m-3"></div>
-                </div>
-                <div className="w-1/6">
-                  <h4 className="font-bold text-lg m-3">CSS</h4>
+              <li className="w-full flex items-center justify-center px-3 py-5 xl:w-1/2">
+                <div className="w-1/3 flex flex-col md:flex-row items-center">
+                  <div className="w-1/3 flex justify-center">
+                    <Image
+                      src="icons8-css3-100.png"
+                      alt=""
+                      width={50}
+                      height={50}
+                      style={{ objectFit: "cover" }}
+                    />
+                  </div>
+                  <div className="w-2/3 flex justify-center md:justify-start">
+                    <h4 className="font-bold text-lg m-3">CSS</h4>
+                  </div>
                 </div>
                 <div className="w-2/3">
-                  <p className="">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Reiciendis sequi consectetur aliquam ab fuga eos sapiente
-                    atque. Officia doloremque vero reprehenderit sint iusto nam
-                    nostrum, ut fugiat saepe nihil beatae.{" "}
+                  <p className="m-3">
+                    UdemyでHTML, CSS, JavaScriptを学習した。
                   </p>
                 </div>
               </li>
-              <li className="flex items-center justify-center m-2">
-                <div className="w-1/6">
-                  <div className="w-30 h-30 bg-red-500 m-3"></div>
-                </div>
-                <div className="w-1/6">
-                  <h4 className="font-bold text-lg m-3">JavaScript</h4>
+              <li className="w-full flex items-center justify-center px-3 py-5 xl:w-1/2">
+                <div className="w-1/3 flex flex-col md:flex-row items-center">
+                  <div className="w-full md:w-1/3 flex justify-center">
+                    <Image
+                      src="icons8-js-100.png"
+                      alt=""
+                      width={50}
+                      height={50}
+                      style={{ objectFit: "cover" }}
+                    />
+                  </div>
+                  <div className="w-2/3 flex justify-center md:justify-start">
+                    <h4 className="font-bold text-lg m-3">JavaScript</h4>
+                  </div>
                 </div>
                 <div className="w-2/3">
-                  <p className="">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Reiciendis sequi consectetur aliquam ab fuga eos sapiente
-                    atque. Officia doloremque vero reprehenderit sint iusto nam
-                    nostrum, ut fugiat saepe nihil beatae.{" "}
+                  <p className="m-3">
+                    UdemyでHTML, CSS, JavaScriptを学習した。
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div className="flex flex-col items-center w-full my-5">
+            <h3 className="font-bold text-center text-3xl m-5">BACKEND</h3>
+            <ul className="w-full flex flex-col xl:flex-row xl:flex-wrap items-center">
+              <li className="w-full flex items-center justify-center px-3 py-5 xl:w-1/2">
+                <div className="w-1/3 flex flex-col md:flex-row items-center">
+                  <div className="w-1/3 flex justify-center">
+                    <Image
+                      src="HTML5のロゴアイコン.png"
+                      alt=""
+                      width={50}
+                      height={50}
+                      style={{ objectFit: "cover" }}
+                    />
+                  </div>
+                  <div className="w-2/3 flex justify-center md:justify-start">
+                    <h4 className="font-bold text-lg m-3">HTML</h4>
+                  </div>
+                </div>
+                <div className="w-2/3">
+                  <p className="m-3">
+                    UdemyでHTML, CSS, JavaScriptを学習した。
+                  </p>
+                </div>
+              </li>
+              <li className="w-full flex items-center justify-center px-3 py-5 xl:w-1/2">
+                <div className="w-1/3 flex flex-col md:flex-row items-center">
+                  <div className="w-1/3 flex justify-center">
+                    <Image
+                      src="icons8-css3-100.png"
+                      alt=""
+                      width={50}
+                      height={50}
+                      style={{ objectFit: "cover" }}
+                    />
+                  </div>
+                  <div className="w-2/3 flex justify-center md:justify-start">
+                    <h4 className="font-bold text-lg m-3">CSS</h4>
+                  </div>
+                </div>
+                <div className="w-2/3">
+                  <p className="m-3">
+                    UdemyでHTML, CSS, JavaScriptを学習した。
+                  </p>
+                </div>
+              </li>
+              <li className="w-full flex items-center justify-center px-3 py-5 xl:w-1/2">
+                <div className="w-1/3 flex flex-col md:flex-row items-center">
+                  <div className="w-1/3 flex justify-center">
+                    <Image
+                      src="icons8-js-100.png"
+                      alt=""
+                      width={50}
+                      height={50}
+                      style={{ objectFit: "cover" }}
+                    />
+                  </div>
+                  <div className="w-2/3 flex justify-center md:justify-start">
+                    <h4 className="font-bold text-lg m-3">JavaScript</h4>
+                  </div>
+                </div>
+                <div className="w-2/3">
+                  <p className="m-3">
+                    UdemyでHTML, CSS, JavaScriptを学習した。
                   </p>
                 </div>
               </li>
@@ -114,13 +201,13 @@ export default function Home() {
       </div>
       <div
         id="works"
-        className="max-w-7xl flex justify-center items-center flex-col my-8"
+        className="max-w-7xl flex justify-center items-center flex-col my-20"
       >
-        <div className="h-20 flex items-center">
+        <div className="w-full h-40 flex items-center justify-center">
           <h2 className="text-5xl font-bold text-center mb-3">WORKS</h2>
         </div>
-        <ul className="flex justify-between flex-wrap">
-          <li className="flex flex-col items-center w-sm mx-3">
+        <ul className="w-full flex sm:justify-between justify-center flex-wrap">
+          <li className="w-full flex flex-col items-center w-sm mx-3">
             <Image
               src="word_car.png"
               alt=""
@@ -138,7 +225,7 @@ export default function Home() {
               Incidunt quia suscipit optio at illo?
             </p>
           </li>
-          <li className="flex flex-col items-center w-sm mx-3">
+          <li className="w-full flex flex-col items-center w-sm mx-3">
             <Image
               src="word_car.png"
               alt=""
@@ -156,7 +243,7 @@ export default function Home() {
               Incidunt quia suscipit optio at illo?
             </p>
           </li>
-          <li className="flex flex-col items-center w-sm mx-3">
+          <li className="w-full flex flex-col items-center w-sm mx-3">
             <Image
               src="word_car.png"
               alt=""
