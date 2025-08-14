@@ -209,7 +209,7 @@ export default function Home() {
         <ul className="w-full flex sm:justify-between justify-center flex-wrap">
           <li className="w-full flex flex-col items-center w-sm mx-3 my-5">
             <Image
-              src="word_car.png"
+              src="registered_word.png"
               alt=""
               objectFit="cover"
               height={300}
@@ -227,7 +227,7 @@ export default function Home() {
           </li>
           <li className="w-full flex flex-col items-center w-sm mx-3 my-5">
             <Image
-              src="word_car.png"
+              src="registered_word.png"
               alt=""
               objectFit="cover"
               height={300}
@@ -245,7 +245,7 @@ export default function Home() {
           </li>
           <li className="w-full flex flex-col items-center w-sm mx-3 my-5">
             <Image
-              src="word_car.png"
+              src="registered_word.png"
               alt=""
               objectFit="cover"
               height={300}
@@ -265,7 +265,7 @@ export default function Home() {
       </div>
       <div
         id="contact"
-        className="max-w-7xl flex flex-col justify-center items-center flex-col my-8"
+        className="max-w-7xl flex flex-col justify-center items-center my-8"
       >
         <h2 className="text-5xl font-bold mt-5">CONTACT</h2>
         <div className="mt-5 mx-3">
