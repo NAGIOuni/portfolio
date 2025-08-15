@@ -17,21 +17,127 @@ const TangoCard = () => {
           <div className="absolute inset-0 bg-black opacity-60"></div>
         </div>
 
-        <div className="relative z-10 max-w-6xl mx-auto px-6 text-center text-white">
-          <h1 className="text-5xl md:text-6xl font-bold mb-4">Tango!</h1>
-          <p className="text-xl md:text-2xl mb-8 text-gray-200">
-            イメージで覚える英単語学習アプリ
-          </p>
-          <div className="flex flex-col md:flex-row justify-center items-center gap-8 mt-12">
-            <div className="bg-white bg-opacity-10 backdrop-blur-sm border border-white border-opacity-20 rounded-lg p-6">
-              <h3 className="text-lg text-gray-800 font-semibold mb-2">
-                開発期間
-              </h3>
-              <p className="text-lg text-gray-800">2024年1月〜2024年3月</p>
+        <div className="relative z-10 max-w-6xl mx-auto px-6 text-white">
+          <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
+            {/* 左側: メイン情報 */}
+            <div className="text-center lg:text-left">
+              <h1 className="text-5xl md:text-6xl font-bold mb-6">Tango!</h1>
+              <p className="text-xl md:text-2xl mb-6 text-gray-200">
+                イメージで覚える英単語学習アプリ
+              </p>
+              <p className="text-lg text-gray-300 mb-8 leading-relaxed">
+                視覚的なイメージと英単語を関連付けて効率的に学習。
+                <br />
+                Unsplash
+                APIで豊富な画像から選択し、自分だけの単語帳を作成できます。
+              </p>
+
+              {/* 開発情報 */}
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                <div className="bg-black bg-opacity-30 backdrop-blur-sm border border-gray-400 border-opacity-30 rounded-lg p-4">
+                  <h3 className="text-sm font-semibold mb-1 text-white">
+                    開発期間
+                  </h3>
+                  <p className="text-lg text-gray-100">2024年1月〜2024年3月</p>
+                </div>
+                <div className="bg-black bg-opacity-30 backdrop-blur-sm border border-gray-400 border-opacity-30 rounded-lg p-4">
+                  <h3 className="text-sm font-semibold mb-1 text-white">
+                    開発体制
+                  </h3>
+                  <p className="text-lg text-gray-100">個人開発</p>
+                </div>
+              </div>
             </div>
-            <div className="bg-white text-gray-800 bg-opacity-10 backdrop-blur-sm border border-white border-opacity-20 rounded-lg p-6">
-              <h3 className="text-lg font-semibold mb-2">開発体制</h3>
-              <p className="text-lg text-gray-800">個人開発</p>
+
+            {/* 右側: ユーザーメリット */}
+            <div className="space-y-4">
+              <h3 className="text-xl font-bold mb-6 text-center lg:text-left">
+                このアプリでできること
+              </h3>
+
+              <div className="bg-black bg-opacity-30 backdrop-blur-sm border border-gray-400 border-opacity-30 rounded-lg p-6">
+                <div className="flex items-start">
+                  <div className="bg-gray-600 bg-opacity-50 rounded-full p-3 mr-4 flex-shrink-0">
+                    <svg
+                      className="w-6 h-6 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="font-bold mb-2 text-white">
+                      記憶に残る英単語学習
+                    </h4>
+                    <p className="text-sm text-gray-200">
+                      視覚的イメージで英単語を覚えるので、従来の暗記よりも長期記憶に定着しやすくなります
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-black bg-opacity-30 backdrop-blur-sm border border-gray-400 border-opacity-30 rounded-lg p-6">
+                <div className="flex items-start">
+                  <div className="bg-gray-600 bg-opacity-50 rounded-full p-3 mr-4 flex-shrink-0">
+                    <svg
+                      className="w-6 h-6 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="font-bold mb-2 text-white">
+                      効率的な学習時間
+                    </h4>
+                    <p className="text-sm text-gray-200">
+                      単語の入力作業が自動化されているので、覚えることに集中でき学習時間を大幅に短縮できます
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-black bg-opacity-30 backdrop-blur-sm border border-gray-400 border-opacity-30 rounded-lg p-6">
+                <div className="flex items-start">
+                  <div className="bg-gray-600 bg-opacity-50 rounded-full p-3 mr-4 flex-shrink-0">
+                    <svg
+                      className="w-6 h-6 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="font-bold mb-2 text-white">
+                      継続しやすい学習習慣
+                    </h4>
+                    <p className="text-sm text-gray-200">
+                      学習進捗が見える化されているので、モチベーションを保ちながら継続的に語彙力を向上させられます
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
