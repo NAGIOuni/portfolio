@@ -1,37 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio Site
 
-## Getting Started
+RYOTA のエンジニアポートフォリオサイト
 
-First, run the development server:
+## Live Site
+
+https://portfolio-4vh3s9vii-nagiounis-projects.vercel.app/
+
+## 技術スタック
+
+- Next.js 15.3.2
+- React 19
+- TypeScript
+- Tailwind CSS v4
+- Vercel (デプロイ)
+
+## 機能
+
+- レスポンシブデザイン
+- 青から紫へのグラデーションアクセント
+- SSG (Static Site Generation)
+- 英語学習アプリ「Tango!」の紹介
+- カードベースの UI 設計
+- CSS-only アニメーション
+
+## 開発・ビルドコマンド
 
 ```bash
+# 開発サーバー起動
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# 本番ビルド
+npm run build
+
+# 本番サーバー起動
+npm run start
+
+# リンター実行
+npm run lint
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+開発サーバーは [http://localhost:3000](http://localhost:3000) で起動します。
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## プロジェクト構成
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `/src/app/page.tsx` - メインページ
+- `/src/app/tangoCard/page.tsx` - 英語学習アプリの詳細ページ
+- `/src/app/globals.css` - グローバルスタイル・アニメーション
+- `/public/` - 画像・アイコンファイル
 
-## Learn More
+## デザイン特徴
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# portfolio
+- モノクロームベースデザイン
+- 青 → 紫グラデーションアクセント
+- ホバーエフェクト付きカード UI
+- スムーズなページ内アニメーション
