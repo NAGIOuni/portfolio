@@ -1,9 +1,10 @@
 import Image from "next/image";
 import React from "react";
+import Link from "next/link";
 
 const TangoCard = () => {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 relative">
       <div className="relative h-screen flex items-center justify-center">
         <div className="absolute inset-0">
           <Image
@@ -600,6 +601,311 @@ const TangoCard = () => {
           </div>
         </div>
       </div>
+
+      {/* 学習・成長ポイントセクション */}
+      <div className="bg-white py-16">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-4xl font-bold text-center mb-16 text-gray-800">
+            学習・成長ポイント
+          </h2>
+
+          {/* 新しく学んだ技術 */}
+          <div className="mb-16">
+            <div className="flex items-center mb-8">
+              <div className="bg-gray-800 rounded-full p-3 mr-4">
+                <svg
+                  className="w-6 h-6 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C20.168 18.477 18.582 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                  />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold text-gray-800">
+                新しく学んだ技術
+              </h3>
+            </div>
+            <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="bg-white rounded-lg p-4 shadow-sm border border-gray-100">
+                  <div className="flex items-center mb-3">
+                    <div className="w-3 h-3 bg-gray-800 rounded-full mr-3"></div>
+                    <h4 className="font-semibold text-gray-800">MongoDB</h4>
+                  </div>
+                  <p className="text-gray-600 text-sm">
+                    NoSQLデータベースの設計と操作を習得
+                  </p>
+                </div>
+                <div className="bg-white rounded-lg p-4 shadow-sm border border-gray-100">
+                  <div className="flex items-center mb-3">
+                    <div className="w-3 h-3 bg-gray-800 rounded-full mr-3"></div>
+                    <h4 className="font-semibold text-gray-800">外部API連携</h4>
+                  </div>
+                  <p className="text-gray-600 text-sm">
+                    Unsplash APIとの統合と非同期処理
+                  </p>
+                </div>
+                <div className="bg-white rounded-lg p-4 shadow-sm border border-gray-100">
+                  <div className="flex items-center mb-3">
+                    <div className="w-3 h-3 bg-gray-800 rounded-full mr-3"></div>
+                    <h4 className="font-semibold text-gray-800">React開発</h4>
+                  </div>
+                  <p className="text-gray-600 text-sm">
+                    モダンなフロントエンド開発手法
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* 苦労した点 */}
+          <div>
+            <div className="flex items-center mb-8">
+              <div className="bg-gray-600 rounded-full p-3 mr-4">
+                <svg
+                  className="w-6 h-6 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold text-gray-800">苦労した点</h3>
+            </div>
+            <div className="space-y-8">
+              <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
+                <div className="flex items-start">
+                  <div className="bg-gray-800 rounded-full p-2 mr-4 flex-shrink-0 mt-1">
+                    <svg
+                      className="w-4 h-4 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-semibold text-gray-800 mb-3">
+                      Reactの学習
+                    </h4>
+                    <p className="text-gray-700 leading-relaxed">
+                      近年、フロントエンド開発ではReactのようなフレームワークが用いられるということを知り、本アプリケーションでもフロントエンドはReactを用いて実装しようと考えました。しかし、それまでReactには触れたことがなかったため、Reactを学習しながらの実装となりました。特に苦労したのはuseReducerの学習です。英単語の登録画面での入力情報の状態管理はuseReducerを用いて実装しましたが、useReducerをなかなか理解することができず実装に苦戦しました。Udemyの講座を何度も見返しながら仕組みを理解し最終的に実装することができました。
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
+                <div className="flex items-start">
+                  <div className="bg-gray-800 rounded-full p-2 mr-4 flex-shrink-0 mt-1">
+                    <svg
+                      className="w-4 h-4 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-semibold text-gray-800 mb-3">
+                      不十分な開発計画
+                    </h4>
+                    <p className="text-gray-700 leading-relaxed">
+                      アプリケーションを作る際に、要件定義や設計を十分に行わなかったため、実装中に多くの問題が発生しました。特に、データベースのスキーマの設計が不十分だったため、後から大幅な修正が必要になり、開発に不必要に時間がかかってしまいました。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* 今後の追加機能セクション */}
+      <div className="bg-gray-100 py-16">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-4xl font-bold text-center mb-16 text-gray-800">
+            今後の追加機能
+          </h2>
+
+          <div className="grid lg:grid-cols-3 gap-8">
+            {/* 単語テスト機能 */}
+            <div className="bg-white rounded-lg shadow-lg p-6 border border-gray-200 hover:shadow-xl transition-shadow">
+              <div className="bg-gray-800 rounded-full p-4 mx-auto mb-6 w-16 h-16 flex items-center justify-center">
+                <svg
+                  className="w-8 h-8 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-4 text-center">
+                単語テスト機能
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                ユーザーが登録した単語を使ってテストを行う機能を追加します。これにより、ユーザーはこのアプリを単語帳としてだけでなく、学習ツールとしても活用できるようになります。
+              </p>
+              <div className="mt-4 pt-4 border-t border-gray-200">
+                <div className="flex items-center text-sm text-gray-500">
+                  <svg
+                    className="w-4 h-4 mr-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  学習効果測定
+                </div>
+              </div>
+            </div>
+
+            {/* 音声読み上げ機能 */}
+            <div className="bg-white rounded-lg shadow-lg p-6 border border-gray-200 hover:shadow-xl transition-shadow">
+              <div className="bg-gray-600 rounded-full p-4 mx-auto mb-6 w-16 h-16 flex items-center justify-center">
+                <svg
+                  className="w-8 h-8 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 14.142M5 14.5v-5c0-.55.45-1 1-1h3.5l4.5-3v12l-4.5-3H6c-.55 0-1-.45-1-1z"
+                  />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-4 text-center">
+                音声読み上げ機能
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                日本における英語教育において、英語の正しい発音を理解している人が少ないという課題があります。そこで、英単語の発音を音声で読み上げる機能を追加します。これにより、ユーザーは単語の正しい発音を学ぶことができ、リスニングスキルの向上にもつながります。
+              </p>
+              <div className="mt-4 pt-4 border-t border-gray-200">
+                <div className="flex items-center text-sm text-gray-500">
+                  <svg
+                    className="w-4 h-4 mr-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  発音・リスニング強化
+                </div>
+              </div>
+            </div>
+
+            {/* 単語の一括追加機能 */}
+            <div className="bg-white rounded-lg shadow-lg p-6 border border-gray-200 hover:shadow-xl transition-shadow">
+              <div className="bg-gray-400 rounded-full p-4 mx-auto mb-6 w-16 h-16 flex items-center justify-center">
+                <svg
+                  className="w-8 h-8 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10"
+                  />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-4 text-center">
+                単語の一括追加機能
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                現状では、英単語を一つずつ追加する設計になっているため、大量の英単語を学習したいユーザーにとっては効率が良くないと考えられます。そこで、CSVファイルなどから単語を一括で追加する機能を実装します。これにより、ユーザーは大量の単語を効率的に登録できるようになり、スムーズに学習に移ることができます。
+              </p>
+              <div className="mt-4 pt-4 border-t border-gray-200">
+                <div className="flex items-center text-sm text-gray-500">
+                  <svg
+                    className="w-4 h-4 mr-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  効率的な単語登録
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* ホームに戻るボタン */}
+      <Link href="/" className="fixed bottom-6 left-6 z-50">
+        <button className="bg-black bg-opacity-20 hover:bg-opacity-30 backdrop-blur-sm border border-white border-opacity-30 rounded-full p-3 text-white transition-all duration-300 hover:scale-105 hover:-translate-y-1 hover:shadow-lg cursor-pointer group flex items-center gap-2">
+          <svg
+            className="w-5 h-5 group-hover:-translate-x-1 transition-transform duration-300"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M10 19l-7-7m0 0l7-7m-7 7h18"
+            />
+          </svg>
+          <span className="text-sm font-medium group-hover:text-gray-100 transition-colors duration-300">
+            ホームに戻る
+          </span>
+        </button>
+      </Link>
     </div>
   );
 };
