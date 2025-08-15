@@ -401,26 +401,50 @@ export default function Home() {
             <span className="block w-20 h-1 bg-blue-500 mx-auto mt-3"></span>
           </h2>
         </div>
-        <ul className="w-full flex sm:justify-between justify-center flex-wrap">
+        <ul className="w-full flex sm:justify-center justify-center flex-wrap gap-8 items-stretch">
           <Link href="/tangoCard">
-            <li className="w-full max-w-sm mx-3 my-5 bg-gray-50 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow cursor-pointer">
-              <div className="flex flex-col items-center p-6">
-                <div className="mb-4 rounded-lg overflow-hidden">
+            <li className="w-full max-w-sm h-full bg-gray-50 rounded-lg border border-gray-200 card-hover hover:border-blue-200 hover:bg-blue-50 transition-all duration-300 cursor-pointer">
+              <div className="flex flex-col items-center p-6 h-full">
+                <div className="w-[300px] h-[300px] mb-4 rounded-lg overflow-hidden flex items-center justify-center bg-gray-100 transform transition-transform duration-300 hover:scale-105">
                   <Image
                     src="registered_word.png"
                     alt=""
-                    objectFit="cover"
-                    height={300}
                     width={300}
-                    className="rounded-lg"
+                    height={300}
+                    className="rounded-lg object-contain max-w-full max-h-full"
+                    style={{ objectFit: "contain" }}
                   />
                 </div>
-                <h3 className="text-2xl font-bold mb-3 text-gray-800">
-                  Tango!
-                </h3>
-                <p className="text-gray-600 text-center">
-                  イメージで覚える英単語学習アプリ
-                </p>
+                <div className="flex flex-col flex-grow justify-center items-center text-center">
+                  <h3 className="text-2xl font-bold mb-3 text-gray-800 hover:text-blue-600 transition-colors duration-300">
+                    Tango!
+                  </h3>
+                  <p className="text-gray-600">
+                    イメージで覚える英単語学習アプリ
+                  </p>
+                </div>
+              </div>
+            </li>
+          </Link>
+          <Link href="/">
+            <li className="w-full max-w-sm h-full bg-gray-50 rounded-lg border border-gray-200 card-hover hover:border-blue-200 hover:bg-blue-50 transition-all duration-300 cursor-pointer">
+              <div className="flex flex-col items-center p-6 h-full">
+                <div className="w-[300px] h-[300px] mb-4 rounded-lg overflow-hidden flex items-center justify-center bg-gray-100 transform transition-transform duration-300 hover:scale-105">
+                  <Image
+                    src="/portfolio.png"
+                    alt=""
+                    width={300}
+                    height={300}
+                    className="rounded-lg object-contain max-w-full max-h-full"
+                    style={{ objectFit: "contain" }}
+                  />
+                </div>
+                <div className="flex flex-col flex-grow justify-center items-center text-center">
+                  <h3 className="text-2xl font-bold mb-3 text-gray-800 hover:text-blue-600 transition-colors duration-300">
+                    ポートフォリオ
+                  </h3>
+                  <p className="text-gray-600">ポートフォリオサイト</p>
+                </div>
               </div>
             </li>
           </Link>
