@@ -24,7 +24,7 @@ export default function Home() {
         </div>
         <div className="transform transition-all duration-1000 ease-out delay-300 animate-fade-in-left">
           <p className="mt-3 ml-3 text-gray-600 text-lg tracking-wider">
-            Engineer's Portfolio
+            Engineer&apos;s Portfolio
           </p>
           <div className="ml-3 mt-2 w-24 h-0.5 bg-gradient-accent animate-expand-width"></div>
         </div>
