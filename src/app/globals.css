@@ -129,7 +129,58 @@ body {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
-/* Blue accent utilities */
+/* Gradient accent utilities */
+.bg-gradient-accent {
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+}
+
+.text-gradient-accent {
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.border-gradient-accent {
+  border-image: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%) 1;
+}
+
+/* Dynamic hover gradient borders */
+.card-gradient-hover {
+  position: relative;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  transition: all 0.3s ease;
+}
+
+.card-gradient-hover::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  padding: 1px;
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+  border-radius: inherit;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card-gradient-hover:hover::before {
+  opacity: 1;
+}
+
+.card-gradient-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(
+    135deg,
+    rgba(59, 130, 246, 0.05) 0%,
+    rgba(139, 92, 246, 0.05) 100%
+  );
+}
+
+/* Blue accent utilities (legacy support) */
 .text-blue-accent {
   color: #3b82f6;
 }

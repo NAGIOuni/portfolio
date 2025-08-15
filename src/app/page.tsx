@@ -8,17 +8,17 @@ export default function Home() {
       <div className="w-full max-w-7xl h-screen flex flex-col xl:flex-row items-center justify-center xl:justify-start relative overflow-hidden">
         {/* Background subtle pattern */}
         <div className="absolute inset-0 opacity-5">
-          <div className="absolute top-20 left-20 w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
+          <div className="absolute top-20 left-20 w-2 h-2 bg-gradient-accent rounded-full animate-pulse"></div>
           <div className="absolute top-40 right-32 w-1 h-1 bg-gray-400 rounded-full animate-pulse delay-1000"></div>
-          <div className="absolute bottom-32 left-1/4 w-1.5 h-1.5 bg-blue-400 rounded-full animate-pulse delay-2000"></div>
+          <div className="absolute bottom-32 left-1/4 w-1.5 h-1.5 bg-gradient-accent rounded-full animate-pulse delay-2000"></div>
           <div className="absolute bottom-20 right-20 w-1 h-1 bg-gray-500 rounded-full animate-pulse delay-3000"></div>
         </div>
 
         <div className="w-auto transform transition-all duration-1000 ease-out animate-fade-in-up">
-          <h1 className="ml-3 text-5xl md:text-7xl xl:text-9xl font-bold text-gray-900 hover:text-blue-600 transition-colors duration-500">
+          <h1 className="ml-3 text-5xl md:text-7xl xl:text-9xl font-bold text-gray-900 hover:text-gradient-accent transition-all duration-500">
             NAKAMURA
           </h1>
-          <h1 className="ml-3 text-5xl md:text-7xl xl:text-9xl font-bold text-gray-900 hover:text-blue-600 transition-colors duration-500">
+          <h1 className="ml-3 text-5xl md:text-7xl xl:text-9xl font-bold text-gray-900 hover:text-gradient-accent transition-all duration-500">
             RYOTA
           </h1>
         </div>
@@ -26,36 +26,38 @@ export default function Home() {
           <p className="mt-3 ml-3 text-gray-600 text-lg tracking-wider">
             Engineer's Portfolio
           </p>
-          <div className="ml-3 mt-2 w-24 h-0.5 bg-blue-500 animate-expand-width"></div>
+          <div className="ml-3 mt-2 w-24 h-0.5 bg-gradient-accent animate-expand-width"></div>
         </div>
       </div>
       <div className="max-w-5xl flex justify-center items-center flex-col my-20 px-8 scroll-animate">
         <div className="h-40 flex items-center">
           <h2 className="text-5xl font-bold text-center mb-3 text-gray-900">
             PROFILE
-            <span className="block w-20 h-1 bg-blue-500 mx-auto mt-3"></span>
+            <span className="block w-20 h-1 bg-gradient-accent mx-auto mt-3"></span>
           </h2>
         </div>
         <div className="flex items-center flex-col md:flex-row">
           <div className="w-1/3 flex justify-center">
-            <div className="w-48 h-48 bg-gray-200 rounded-full flex items-center justify-center mb-5 md:mb-0 border-4 border-blue-100 hover:border-blue-300 transition-colors duration-300 card-hover">
-              <svg
-                className="w-24 h-24 text-gray-500 hover:text-blue-500 transition-colors duration-300"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
-              </svg>
+            <div className="w-48 h-48 bg-gray-200 rounded-full flex items-center justify-center mb-5 md:mb-0 border-4 border-gray-300 hover:border-transparent hover:bg-gradient-accent hover:p-1 transition-all duration-300 card-hover group">
+              <div className="w-full h-full bg-gray-200 rounded-full flex items-center justify-center group-hover:bg-white transition-colors duration-300">
+                <svg
+                  className="w-24 h-24 text-gray-500 group-hover:text-gradient-accent transition-all duration-300"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                </svg>
+              </div>
             </div>
           </div>
           <div className="w-full md:w-2/3">
             <div className="p-6">
               {/* 基本情報カード */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-                <div className="bg-gray-50 rounded-lg p-4 border border-gray-200 card-hover hover:border-blue-200 transition-all duration-300">
+                <div className="card-gradient-hover rounded-lg p-4">
                   <div className="flex items-center mb-2">
                     <svg
-                      className="w-5 h-5 mr-2 text-blue-500"
+                      className="w-5 h-5 mr-2 text-gradient-accent"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -72,10 +74,10 @@ export default function Home() {
                   <p className="text-gray-600">大学院生（化学専攻）</p>
                 </div>
 
-                <div className="bg-gray-50 rounded-lg p-4 border border-gray-200 card-hover hover:border-blue-200 transition-all duration-300">
+                <div className="card-gradient-hover rounded-lg p-4">
                   <div className="flex items-center mb-2">
                     <svg
-                      className="w-5 h-5 mr-2 text-blue-500"
+                      className="w-5 h-5 mr-2 text-purple-600"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -206,7 +208,7 @@ export default function Home() {
         <div className="h-40 flex items-center">
           <h2 className="text-5xl font-bold text-center text-gray-900">
             SKILL
-            <span className="block w-16 h-1 bg-blue-500 mx-auto mt-3"></span>
+            <span className="block w-16 h-1 bg-gradient-accent mx-auto mt-3"></span>
           </h2>
         </div>
         <div className="flex flex-col w-full">
@@ -216,7 +218,7 @@ export default function Home() {
               FRONTEND
             </h3>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full">
-              <div className="bg-gray-50 rounded-lg p-6 border border-gray-200 text-center card-hover hover:border-blue-200 hover:bg-blue-50 transition-all duration-300">
+              <div className="card-gradient-hover rounded-lg p-6 text-center">
                 <div className="w-12 h-12 mx-auto mb-3 flex items-center justify-center">
                   <Image
                     src="/icons8-html-5.svg"
@@ -228,7 +230,7 @@ export default function Home() {
                 <h4 className="font-semibold text-gray-800">HTML</h4>
               </div>
 
-              <div className="bg-gray-50 rounded-lg p-6 border border-gray-200 text-center card-hover hover:border-blue-200 hover:bg-blue-50 transition-all duration-300">
+              <div className="card-gradient-hover rounded-lg p-6 text-center">
                 <div className="w-12 h-12 mx-auto mb-3 flex items-center justify-center">
                   <Image
                     src="/icons8-css.svg"
@@ -240,7 +242,7 @@ export default function Home() {
                 <h4 className="font-semibold text-gray-800">CSS</h4>
               </div>
 
-              <div className="bg-gray-50 rounded-lg p-6 border border-gray-200 text-center card-hover hover:border-blue-200 hover:bg-blue-50 transition-all duration-300">
+              <div className="card-gradient-hover rounded-lg p-6 text-center">
                 <div className="w-12 h-12 mx-auto mb-3 flex items-center justify-center">
                   <Image
                     src="/icons8-js.svg"
@@ -252,7 +254,7 @@ export default function Home() {
                 <h4 className="font-semibold text-gray-800">JavaScript</h4>
               </div>
 
-              <div className="bg-gray-50 rounded-lg p-6 border border-gray-200 text-center card-hover hover:border-blue-200 hover:bg-blue-50 transition-all duration-300">
+              <div className="card-gradient-hover rounded-lg p-6 text-center">
                 <div className="w-12 h-12 mx-auto mb-3 flex items-center justify-center">
                   <Image
                     src="/icons8-タイプスクリプト.svg"
@@ -264,7 +266,7 @@ export default function Home() {
                 <h4 className="font-semibold text-gray-800">TypeScript</h4>
               </div>
 
-              <div className="bg-gray-50 rounded-lg p-6 border border-gray-200 text-center card-hover hover:border-blue-200 hover:bg-blue-50 transition-all duration-300">
+              <div className="card-gradient-hover rounded-lg p-6 text-center">
                 <div className="w-12 h-12 mx-auto mb-3 flex items-center justify-center">
                   <Image
                     src="/icons8-ブートストラップ.svg"
@@ -276,7 +278,7 @@ export default function Home() {
                 <h4 className="font-semibold text-gray-800">Bootstrap</h4>
               </div>
 
-              <div className="bg-gray-50 rounded-lg p-6 border border-gray-200 text-center card-hover hover:border-blue-200 hover:bg-blue-50 transition-all duration-300">
+              <div className="card-gradient-hover rounded-lg p-6 text-center">
                 <div className="w-12 h-12 mx-auto mb-3 flex items-center justify-center">
                   <Image
                     src="/icons8-反応する.svg"
@@ -398,12 +400,12 @@ export default function Home() {
         <div className="w-full h-40 flex items-center justify-center">
           <h2 className="text-5xl font-bold text-center mb-3 text-gray-900">
             WORKS
-            <span className="block w-20 h-1 bg-blue-500 mx-auto mt-3"></span>
+            <span className="block w-20 h-1 bg-gradient-accent mx-auto mt-3"></span>
           </h2>
         </div>
         <ul className="w-full flex sm:justify-center justify-center flex-wrap gap-8 items-stretch">
           <Link href="/tangoCard">
-            <li className="w-full max-w-sm h-full bg-gray-50 rounded-lg border border-gray-200 card-hover hover:border-blue-200 hover:bg-blue-50 transition-all duration-300 cursor-pointer">
+            <li className="w-full max-w-sm h-full bg-gray-50 rounded-lg border border-gray-200 card-gradient-hover cursor-pointer">
               <div className="flex flex-col items-center p-6 h-full">
                 <div className="w-[300px] h-[300px] mb-4 rounded-lg overflow-hidden flex items-center justify-center bg-gray-100 transform transition-transform duration-300 hover:scale-105">
                   <Image
@@ -416,7 +418,7 @@ export default function Home() {
                   />
                 </div>
                 <div className="flex flex-col flex-grow justify-center items-center text-center">
-                  <h3 className="text-2xl font-bold mb-3 text-gray-800 hover:text-blue-600 transition-colors duration-300">
+                  <h3 className="text-2xl font-bold mb-3 text-gray-800 transition-colors duration-300">
                     Tango!
                   </h3>
                   <p className="text-gray-600">
@@ -427,7 +429,7 @@ export default function Home() {
             </li>
           </Link>
           <Link href="/">
-            <li className="w-full max-w-sm h-full bg-gray-50 rounded-lg border border-gray-200 card-hover hover:border-blue-200 hover:bg-blue-50 transition-all duration-300 cursor-pointer">
+            <li className="w-full max-w-sm h-full bg-gray-50 rounded-lg border border-gray-200 card-gradient-hover cursor-pointer">
               <div className="flex flex-col items-center p-6 h-full">
                 <div className="w-[300px] h-[300px] mb-4 rounded-lg overflow-hidden flex items-center justify-center bg-gray-100 transform transition-transform duration-300 hover:scale-105">
                   <Image
@@ -440,7 +442,7 @@ export default function Home() {
                   />
                 </div>
                 <div className="flex flex-col flex-grow justify-center items-center text-center">
-                  <h3 className="text-2xl font-bold mb-3 text-gray-800 hover:text-blue-600 transition-colors duration-300">
+                  <h3 className="text-2xl font-bold mb-3 text-gray-800 transition-colors duration-300">
                     ポートフォリオ
                   </h3>
                   <p className="text-gray-600">ポートフォリオサイト</p>
@@ -455,7 +457,10 @@ export default function Home() {
         className="max-w-5xl flex flex-col justify-center items-center my-20 px-8"
       >
         <div className="h-40 flex items-center">
-          <h2 className="text-5xl font-bold text-center">LINKS</h2>
+          <h2 className="text-5xl font-bold text-center">
+            LINKS
+            <span className="block w-20 h-1 bg-gradient-accent mx-auto mt-3"></span>
+          </h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-4xl">
           {/* GitHub */}
@@ -463,9 +468,9 @@ export default function Home() {
             href="https://github.com/NAGIOuni"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-gray-50 rounded-lg p-6 border border-gray-200 hover:shadow-lg transition-shadow text-center group"
+            className="bg-gray-50 rounded-lg p-6 border border-gray-200 card-gradient-hover text-center group"
           >
-            <div className="w-16 h-16 mx-auto mb-4 bg-gray-800 rounded-lg flex items-center justify-center group-hover:bg-gray-700 transition-colors">
+            <div className="w-16 h-16 mx-auto mb-4 bg-gray-800 rounded-lg flex items-center justify-center group-hover:bg-gradient-accent transition-all duration-300">
               <svg
                 className="w-8 h-8 text-white"
                 fill="currentColor"
@@ -483,9 +488,9 @@ export default function Home() {
             href="https://github.com/NAGIOuni/portfolio"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-gray-50 rounded-lg p-6 border border-gray-200 hover:shadow-lg transition-shadow text-center group"
+            className="bg-gray-50 rounded-lg p-6 border border-gray-200 card-gradient-hover text-center group"
           >
-            <div className="w-16 h-16 mx-auto mb-4 bg-gray-700 rounded-lg flex items-center justify-center group-hover:bg-gray-600 transition-colors">
+            <div className="w-16 h-16 mx-auto mb-4 bg-gray-700 rounded-lg flex items-center justify-center group-hover:bg-gradient-accent transition-all duration-300">
               <svg
                 className="w-8 h-8 text-white"
                 fill="none"
