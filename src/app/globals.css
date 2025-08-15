@@ -26,3 +26,118 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   height: 100%;
 }
+
+/* Custom Animations */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes expand-width {
+  from {
+    width: 0;
+  }
+  to {
+    width: 6rem;
+  }
+}
+
+@keyframes fade-in-scale {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slide-in-bottom {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.8s ease-out forwards;
+}
+
+.animate-fade-in-left {
+  animation: fade-in-left 0.8s ease-out forwards;
+}
+
+.animate-expand-width {
+  animation: expand-width 1s ease-out 0.8s forwards;
+}
+
+.animate-fade-in-scale {
+  animation: fade-in-scale 0.6s ease-out forwards;
+}
+
+/* CSS-only sequential animations */
+.scroll-animate {
+  animation: slide-in-bottom 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+.scroll-animate:nth-of-type(1) {
+  animation-delay: 0.2s;
+}
+
+.scroll-animate:nth-of-type(2) {
+  animation-delay: 0.4s;
+}
+
+.scroll-animate:nth-of-type(3) {
+  animation-delay: 0.6s;
+}
+
+.scroll-animate:nth-of-type(4) {
+  animation-delay: 0.8s;
+}
+
+/* Enhanced hover effects */
+.card-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Blue accent utilities */
+.text-blue-accent {
+  color: #3b82f6;
+}
+
+.bg-blue-accent {
+  background-color: #3b82f6;
+}
+
+.border-blue-accent {
+  border-color: #3b82f6;
+}
