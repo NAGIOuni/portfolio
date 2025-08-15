@@ -3,190 +3,602 @@ import React from "react";
 
 const TangoCard = () => {
   return (
-    <div>
-      <div className="">
-        <h1>Tango!</h1>
-        <p>イメージで覚える英単語アプリ</p>
-        <div className="">
-          <h2>開発期間</h2>
-          <p>2024年1月〜2024年3月</p>
+    <div className="min-h-screen bg-gray-50">
+      <div className="relative h-screen flex items-center justify-center">
+        <div className="absolute inset-0">
+          <Image
+            src="/waldemar-U3Ptj3jafX8-unsplash.jpg"
+            alt="Tango Background"
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-black opacity-60"></div>
         </div>
-        <div className="">
-          <p>個人開発</p>
-        </div>
-      </div>
-      <div className="">
-        <h2>使用技術</h2>
-        <div className="">
-          <h3>フロントエンド</h3>
-          <ul>
-            <li>React</li>
-            <li>BootStrap</li>
-          </ul>
-        </div>
-        <div className="">
-          <h3>バックエンド</h3>
-          <ul>
-            <li>Node.js</li>
-            <li>Express</li>
-          </ul>
-        </div>
-        <div className="">
-          <h3>データベース</h3>
-          <ul>
-            <li>MongoDB</li>
-          </ul>
-        </div>
-        <div className="">
-          <h3>その他</h3>
-          <ul>
-            <li>Unsplash API</li>
-          </ul>
-        </div>
-      </div>
-      <div className="">
-        <h2>主な機能</h2>
-        <ul>
-          <li>英単語の登録・編集・削除</li>
-          <li>イメージのアップロードと表示</li>
-          <li>学習進捗度の管理</li>
-          <li>ユーザー認証機能</li>
-        </ul>
-      </div>
-      <div className="">
-        <h2>デモ</h2>
-        <div className="">
-          <div className="">
-            <Image
-              src="/home.png"
-              alt="トップページ"
-              width={500}
-              height={300}
-              style={{ objectFit: "cover" }}
-            />
-          </div>
-          <div className="">
-            <h3>トップページ</h3>
-            <p>
-              ユーザーがアクセスすると最初にこの画面が表示されます。ボタンをクリックして移動することでログインまたはユーザー登録をすることができます。
-            </p>
-          </div>
-        </div>
-        <div className="">
-          <div className="">
-            <Image
-              src="/create_card.png"
-              alt="カード作成"
-              width={500}
-              height={300}
-              style={{ objectFit: "cover" }}
-            />
-          </div>
-          <div className="">
-            <h3>単語カード作成画面</h3>
-            <p>
-              新しい英単語カードはこちらから作成することができます。カードのタイトルと概要を登録することができます。
-            </p>
-          </div>
-        </div>
-        <div className="">
-          <div className="">
-            <Image
-              src="/create_word.png"
-              alt="単語登録画面"
-              width={500}
-              height={300}
-              style={{ objectFit: "cover" }}
-            />
-          </div>
-          <div className="">
-            <h3>単語登録画面</h3>
-            <p>
-              こちらのページから新しい英単語を登録することができます。
-              発音記号や日本語訳等、入力欄が多数ありますが、必須項目は英単語のみと少なく、簡単に登録することができます。
-            </p>
-          </div>
-        </div>
-        <div className="">
-          <div className="">
-            <Image
-              src="/scraping_word.png"
-              alt="単語情報のスクレイピング"
-              width={500}
-              height={300}
-              style={{ objectFit: "cover" }}
-            />
-          </div>
-          <div className="">
-            <h3>単語情報のスクレイピング</h3>
-            <p>
-              この機能では、Webから単語情報を自動的に取得することができます。英単語を入力した状態で自動入力ボタンをクリックすると、そのほかの情報をスクレイピングして取得し、自動で埋めてくれます。
-            </p>
-          </div>
-        </div>
-        <div className="">
-          <div className="">
-            <Image
-              src="/get_images.png"
-              alt="Unsplash APIから画像取得"
-              width={500}
-              height={300}
-              style={{ objectFit: "cover" }}
-            />
-          </div>
-          <div className="">
-            <h3>単語のイメージ画像の登録</h3>
-            <p>
-              Unsplash
-              APIを使用して、英単語のイメージ画像を30個取得します。その中から自分が一番しっくりくるものを選んで登録することができます。
-            </p>
-          </div>
-        </div>
-        <div className="">
-          <div className="">
-            <Image
-              src="/word_syudou.png"
-              alt="手動でも入力可能"
-              width={500}
-              height={300}
-              style={{ objectFit: "cover" }}
-            />
-          </div>
-          <div className="">
-            <h3>手動での修正</h3>
-            <p>英単語の情報は手動でも入力、修正することができます。</p>
-          </div>
-        </div>
-        
-        <Image
-          src="/registered_word.png"
-          alt="登録した単語詳細"
-          width={500}
-          height={300}
-          style={{ objectFit: "cover" }}
-        />
 
-        <Image
-          src="/word_registered.png"
-          alt="単語登録後の単語一覧画面"
-          width={500}
-          height={300}
-          style={{ objectFit: "cover" }}
-        />
-        <Image
-          src="/next_step.png"
-          alt="次のステップ"
-          width={500}
-          height={300}
-          style={{ objectFit: "cover" }}
-        />
-        <Image
-          src="/next_step_word.png"
-          alt="次のステップの単語ページ"
-          width={500}
-          height={300}
-          style={{ objectFit: "cover" }}
-        />
+        <div className="relative z-10 max-w-6xl mx-auto px-6 text-center text-white">
+          <h1 className="text-5xl md:text-6xl font-bold mb-4">Tango!</h1>
+          <p className="text-xl md:text-2xl mb-8 text-gray-200">
+            イメージで覚える英単語学習アプリ
+          </p>
+          <div className="flex flex-col md:flex-row justify-center items-center gap-8 mt-12">
+            <div className="bg-white bg-opacity-10 backdrop-blur-sm border border-white border-opacity-20 rounded-lg p-6">
+              <h3 className="text-lg text-gray-800 font-semibold mb-2">
+                開発期間
+              </h3>
+              <p className="text-lg text-gray-800">2024年1月〜2024年3月</p>
+            </div>
+            <div className="bg-white text-gray-800 bg-opacity-10 backdrop-blur-sm border border-white border-opacity-20 rounded-lg p-6">
+              <h3 className="text-lg font-semibold mb-2">開発体制</h3>
+              <p className="text-lg text-gray-800">個人開発</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* 開発の背景セクション */}
+      <div className="bg-white py-16">
+        <div className="max-w-4xl mx-auto px-6">
+          <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">
+            開発の背景
+          </h2>
+          <div className="bg-gray-50 rounded-lg p-8 shadow-sm border border-gray-200">
+            <div className="flex items-start mb-8">
+              <div className="bg-gray-800 rounded-full p-3 mr-4 flex-shrink-0 mt-1">
+                <svg
+                  className="w-6 h-6 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">
+                  課題
+                </h3>
+                <p className="text-gray-700 leading-relaxed text-lg">
+                  私はオンライン家庭教師のアルバイトで学生に英語を教えていました。その中で、学生が単語を覚えるのに苦労している姿を見て、なんとかして英単語学習のハードルを下げることはできないかと考えました。
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start">
+              <div className="bg-gray-600 rounded-full p-3 mr-4 flex-shrink-0 mt-1">
+                <svg
+                  className="w-6 h-6 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">
+                  解決法
+                </h3>
+                <p className="text-gray-700 leading-relaxed text-lg">
+                  英単語を視覚的に覚えられるようなアプローチを模索し始めました。英単語をイメージで覚える学習法は、記憶に定着しやすく、単語が複数の意味を持っていたとしても覚える量が少なくて済むというメリットがあることで知られています。私自身、英単語をイメージで覚えたことで英語の文章を読むスピードが向上した経験がありました。このアプローチを活かして、英単語学習をより効果的にサポートするアプリを開発することにしました。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* ターゲットユーザーセクション */}
+      <div className="bg-gray-100 py-16">
+        <div className="max-w-4xl mx-auto px-6">
+          <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">
+            ターゲットユーザー
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white rounded-lg shadow-lg p-6 text-center border border-gray-200 hover:shadow-xl transition-shadow">
+              <div className="bg-gray-800 rounded-full p-4 mx-auto mb-4 w-16 h-16 flex items-center justify-center">
+                <svg
+                  className="w-8 h-8 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C20.168 18.477 18.582 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                  />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold text-gray-800 mb-3">
+                英語学習初心者から中級者
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                基礎的な英単語から中級レベルの語彙まで、段階的に学習したい方
+              </p>
+            </div>
+
+            <div className="bg-white rounded-lg shadow-lg p-6 text-center border border-gray-200 hover:shadow-xl transition-shadow">
+              <div className="bg-gray-600 rounded-full p-4 mx-auto mb-4 w-16 h-16 flex items-center justify-center">
+                <svg
+                  className="w-8 h-8 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M13 10V3L4 14h7v7l9-11h-7z"
+                  />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold text-gray-800 mb-3">
+                英単語を効率的に覚えたい人
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                短時間で効果的に語彙力を向上させたい、忙しい学習者
+              </p>
+            </div>
+
+            <div className="bg-white rounded-lg shadow-lg p-6 text-center border border-gray-200 hover:shadow-xl transition-shadow">
+              <div className="bg-gray-400 rounded-full p-4 mx-auto mb-4 w-16 h-16 flex items-center justify-center">
+                <svg
+                  className="w-8 h-8 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                  />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold text-gray-800 mb-3">
+                視覚的な学習を好む人
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                画像やイメージを活用した記憶法で学習効果を高めたい方
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* 使用技術セクション */}
+      <div className="max-w-6xl mx-auto px-6 py-16">
+        <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">
+          使用技術
+        </h2>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow border border-gray-200">
+            <h3 className="text-xl font-bold mb-4 text-gray-800">
+              フロントエンド
+            </h3>
+            <ul className="space-y-2">
+              <li className="flex items-center">
+                <span className="w-2 h-2 bg-gray-800 rounded-full mr-3"></span>
+                <span className="text-gray-700">React</span>
+              </li>
+              <li className="flex items-center">
+                <span className="w-2 h-2 bg-gray-800 rounded-full mr-3"></span>
+                <span className="text-gray-700">Bootstrap</span>
+              </li>
+            </ul>
+          </div>
+          <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow border border-gray-200">
+            <h3 className="text-xl font-bold mb-4 text-gray-800">
+              バックエンド
+            </h3>
+            <ul className="space-y-2">
+              <li className="flex items-center">
+                <span className="w-2 h-2 bg-gray-800 rounded-full mr-3"></span>
+                <span className="text-gray-700">Node.js</span>
+              </li>
+              <li className="flex items-center">
+                <span className="w-2 h-2 bg-gray-800 rounded-full mr-3"></span>
+                <span className="text-gray-700">Express</span>
+              </li>
+            </ul>
+          </div>
+          <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow border border-gray-200">
+            <h3 className="text-xl font-bold mb-4 text-gray-800">
+              データベース
+            </h3>
+            <ul className="space-y-2">
+              <li className="flex items-center">
+                <span className="w-2 h-2 bg-gray-800 rounded-full mr-3"></span>
+                <span className="text-gray-700">MongoDB</span>
+              </li>
+            </ul>
+          </div>
+          <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow border border-gray-200">
+            <h3 className="text-xl font-bold mb-4 text-gray-800">その他</h3>
+            <ul className="space-y-2">
+              <li className="flex items-center">
+                <span className="w-2 h-2 bg-gray-800 rounded-full mr-3"></span>
+                <span className="text-gray-700">Unsplash API</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      {/* 主な機能セクション */}
+      <div className="bg-gray-100 py-16">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">
+            主な機能
+          </h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-white rounded-lg shadow-md p-6 flex items-center border border-gray-200">
+              <div className="bg-gray-100 rounded-full p-3 mr-4">
+                <svg
+                  className="w-6 h-6 text-gray-700"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                  />
+                </svg>
+              </div>
+              <span className="text-lg text-gray-700">
+                英単語の登録・編集・削除
+              </span>
+            </div>
+            <div className="bg-white rounded-lg shadow-md p-6 flex items-center border border-gray-200">
+              <div className="bg-gray-100 rounded-full p-3 mr-4">
+                <svg
+                  className="w-6 h-6 text-gray-700"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  />
+                </svg>
+              </div>
+              <span className="text-lg text-gray-700">
+                イメージのアップロードと表示
+              </span>
+            </div>
+            <div className="bg-white rounded-lg shadow-md p-6 flex items-center border border-gray-200">
+              <div className="bg-gray-100 rounded-full p-3 mr-4">
+                <svg
+                  className="w-6 h-6 text-gray-700"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                  />
+                </svg>
+              </div>
+              <span className="text-lg text-gray-700">学習進捗度の管理</span>
+            </div>
+            <div className="bg-white rounded-lg shadow-md p-6 flex items-center border border-gray-200">
+              <div className="bg-gray-100 rounded-full p-3 mr-4">
+                <svg
+                  className="w-6 h-6 text-gray-700"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                  />
+                </svg>
+              </div>
+              <span className="text-lg text-gray-700">ユーザー認証機能</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* デモセクション */}
+      <div className="max-w-6xl mx-auto px-6 py-16">
+        <h2 className="text-4xl font-bold text-center mb-16 text-gray-800">
+          デモ・機能紹介
+        </h2>
+
+        {/* トップページ */}
+        <div className="mb-20">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="order-2 lg:order-1">
+              <h3 className="text-2xl font-bold mb-4 text-gray-800">
+                トップページ
+              </h3>
+              <p className="text-gray-600 leading-relaxed text-lg">
+                ユーザーがアクセスすると最初にこの画面が表示されます。ボタンをクリックして移動することでログインまたはユーザー登録をすることができます。
+              </p>
+            </div>
+            <div className="order-1 lg:order-2">
+              <div className="rounded-lg shadow-lg overflow-hidden">
+                <Image
+                  src="/home.png"
+                  alt="トップページ"
+                  width={600}
+                  height={400}
+                  className="w-full h-auto"
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* カード作成 */}
+        <div className="mb-20">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="rounded-lg shadow-lg overflow-hidden">
+                <Image
+                  src="/create_card.png"
+                  alt="カード作成"
+                  width={600}
+                  height={400}
+                  className="w-full h-auto"
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold mb-4 text-gray-800">
+                単語カード作成画面
+              </h3>
+              <p className="text-gray-600 leading-relaxed text-lg">
+                新しい英単語カードはこちらから作成することができます。カードのタイトルと概要を登録することができます。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* 単語登録 */}
+        <div className="mb-20">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="order-2 lg:order-1">
+              <h3 className="text-2xl font-bold mb-4 text-gray-800">
+                単語登録画面
+              </h3>
+              <p className="text-gray-600 leading-relaxed text-lg">
+                こちらのページから新しい英単語を登録することができます。
+                発音記号や日本語訳等、入力欄が多数ありますが、必須項目は英単語のみと少なく、簡単に登録することができます。
+              </p>
+            </div>
+            <div className="order-1 lg:order-2">
+              <div className="rounded-lg shadow-lg overflow-hidden">
+                <Image
+                  src="/create_word.png"
+                  alt="単語登録画面"
+                  width={600}
+                  height={400}
+                  className="w-full h-auto"
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* スクレイピング */}
+        <div className="mb-20">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="rounded-lg shadow-lg overflow-hidden">
+                <Image
+                  src="/scraping_word.png"
+                  alt="単語情報のスクレイピング"
+                  width={600}
+                  height={400}
+                  className="w-full h-auto"
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold mb-4 text-gray-800">
+                単語情報のスクレイピング
+              </h3>
+              <p className="text-gray-600 leading-relaxed text-lg">
+                この機能では、Webから単語情報を自動的に取得することができます。英単語を入力した状態で自動入力ボタンをクリックすると、そのほかの情報をスクレイピングして取得し、自動で埋めてくれます。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* 画像取得 */}
+        <div className="mb-20">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="order-2 lg:order-1">
+              <h3 className="text-2xl font-bold mb-4 text-gray-800">
+                単語のイメージ画像の登録
+              </h3>
+              <p className="text-gray-600 leading-relaxed text-lg">
+                Unsplash
+                APIを使用して、英単語のイメージ画像を30個取得します。その中から自分が一番しっくりくるものを選んで登録することができます。
+              </p>
+            </div>
+            <div className="order-1 lg:order-2">
+              <div className="rounded-lg shadow-lg overflow-hidden">
+                <Image
+                  src="/get_images.png"
+                  alt="Unsplash APIから画像取得"
+                  width={600}
+                  height={400}
+                  className="w-full h-auto"
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* 手動修正 */}
+        <div className="mb-20">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="rounded-lg shadow-lg overflow-hidden">
+                <Image
+                  src="/word_syudou.png"
+                  alt="手動でも入力可能"
+                  width={600}
+                  height={400}
+                  className="w-full h-auto"
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold mb-4 text-gray-800">
+                手動での修正
+              </h3>
+              <p className="text-gray-600 leading-relaxed text-lg">
+                英単語の情報は手動でも入力、修正することができます。自動取得した情報が正確でない場合や、個人的な学習メモを追加したい場合に便利です。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* 単語一覧 */}
+        <div className="mb-20">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="order-2 lg:order-1">
+              <h3 className="text-2xl font-bold mb-4 text-gray-800">
+                単語登録後の単語一覧画面
+              </h3>
+              <p className="text-gray-600 leading-relaxed text-lg">
+                新しく英単語を登録すると、一覧画面に登録した単語が追加されます。学習状況や進捗度が一目で確認できます。
+              </p>
+            </div>
+            <div className="order-1 lg:order-2">
+              <div className="rounded-lg shadow-lg overflow-hidden">
+                <Image
+                  src="/word_registered.png"
+                  alt="単語登録後の単語一覧画面"
+                  width={600}
+                  height={400}
+                  className="w-full h-auto"
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* 単語詳細 */}
+        <div className="mb-20">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="rounded-lg shadow-lg overflow-hidden">
+                <Image
+                  src="/registered_word.png"
+                  alt="登録した単語詳細"
+                  width={600}
+                  height={400}
+                  className="w-full h-auto"
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold mb-4 text-gray-800">
+                登録した英単語の詳細
+              </h3>
+              <p className="text-gray-600 leading-relaxed text-lg">
+                登録した英単語の詳細はこのように表示されます。この英単語を覚えたくなったら「学習開始」ボタンをクリックします。また、登録した英単語を削除することもできます。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* 学習開始 */}
+        <div className="mb-20">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="order-2 lg:order-1">
+              <h3 className="text-2xl font-bold mb-4 text-gray-800">
+                学習開始
+              </h3>
+              <p className="text-gray-600 leading-relaxed text-lg">
+                「学習開始」ボタンをクリックすると、英単語のステータスが「未着手」から「学習中」に変更されます。学習の進捗を段階的に管理できます。
+              </p>
+            </div>
+            <div className="order-1 lg:order-2">
+              <div className="rounded-lg shadow-lg overflow-hidden">
+                <Image
+                  src="/next_step.png"
+                  alt="次のステップ"
+                  width={600}
+                  height={400}
+                  className="w-full h-auto"
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* 学習中詳細 */}
+        <div className="mb-12">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="rounded-lg shadow-lg overflow-hidden">
+                <Image
+                  src="/next_step_word.png"
+                  alt="次のステップの単語ページ"
+                  width={600}
+                  height={400}
+                  className="w-full h-auto"
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold mb-4 text-gray-800">
+                学習中の単語の詳細画面
+              </h3>
+              <p className="text-gray-600 leading-relaxed text-lg">
+                学習ステップが変わると、詳細画面の右上のステータス表示や画面下のボタンが変わります。覚えられたら「学習完了」ボタンをクリックして次のステップに進みます。
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
